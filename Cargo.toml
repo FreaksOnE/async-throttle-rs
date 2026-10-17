@@ -1,0 +1,17 @@
+[package]
+name = "async-throttle-rs"
+version = "0.1.1"
+edition = "2024"
+authors = ["FreaksOnE"]
+description = "Client side rate limiting"
+license = "MIT"
+repository = "https://github.com/FreaksOnE/async-throttle-rs"
+keywords = ["tokio", "async", "rate-limit", "throttle", "http"]
+categories = ["network-programming"]
+readme = "README.md"
+
+[dependencies]
+tokio = {version = "1.53.3", features=["time", "sync", "rt-multi-thread"]}
+
+[dev-dependencies]
+tokio = {version = "1.53.3", features=["macros", "test-util"]}
